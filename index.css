@@ -1,27 +1,13 @@
-div#part1 {
+body {
+    margin: 0px;
+}
+
+div#main {
     width: 100%;
     height : 300px;
+    margin-top: 120px;
     background-color: aqua;
     display: flex;
     flex-direction: column;
     align-content: center;
-}
-
-div#part1-icon {
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-img#part1-icon-image {
-    width: 100px;
-    height: 150px;
-    background-color: red;
-}
-
-span#part1-english-name {
-    font-size: 4.0rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: auto;
-    margin-bottom: auto
 }
