@@ -1,6 +1,7 @@
 document.body.onload = function(){
     const target = $("div#navigation");
-    const source = document.createElement("div");
+    let source = document.createElement("div");
+    source.id = "navigation-icon"
     source.innerHTML = "\
     <div id=\"icon\">\
         <img id=\"icon-image\" src=\"\">\
@@ -9,7 +10,14 @@ document.body.onload = function(){
             <span>Interpreter</span>\
         <\p>\
     </div>\
-    "
+    ";
     target.append(source);
-    
+    source = document.createElement("div");
+    source.id = "navigation-buttons";
+    source.innerHTML = "\
+    <div>\
+        <div class=\"navigation-button\">Introduction</div>\
+    </div>\
+    ";
+    target.append(source);
 };
